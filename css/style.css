@@ -1,4 +1,40 @@
-/* Whole body style */
+/* Whole body */
 body {
   background-color: #0f2b3d;
+  margin: 0;
+}
+
+/* Navbar */
+.ul-nav {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #017a9b;
+  position: fixed;
+}
+
+.ul-nav li {
+  float: left;
+}
+
+.ul-nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-right: 1px solid #1d8bcf;
+}
+
+.ul-nav li a:hover {
+  background-color: #205d85;
+  border-radius: 15px;
+}
+.li-actv {
+  background-color: #88c4e9;
+  border-radius: 15px;
 }
