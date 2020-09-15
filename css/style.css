@@ -8,17 +8,23 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(8, auto);
-  grid-template-rows: 10% 80% 10%;
+  grid-template-rows: 80% 10%;
+  grid-template-areas:
+    "cont cont cont cont cont cont cont cont"
+    "fot fot fot fot fot fot fot fot";
   height: 100vh;
   width: 100%;
+  margin: 4rem 0rem;
 }
 
 .content {
-    border: 1px solid red;
+  grid-area: cont;
+  border: 1px solid blue;
 }
 
 .footer {
-    border: 1px solid red;
+  grid-area: fot;
+  border: 1px solid red;
 }
 
 /* Navbar */
