@@ -35,7 +35,7 @@ body {
   width: 100%;
   list-style-type: none;
   overflow: hidden;
-  background-color: #017a9b;
+  background-color: #33b5e5;
   position: fixed;
 }
 
@@ -57,7 +57,7 @@ body {
   background-color: #205d85;
   border-radius: 15px;
 }
-.li-actv {
-  background-color: #88c4e9;
-  border-radius: 15px;
+
+.li-home {
+  background-color: #15c26b;
 }
