@@ -1,0 +1,100 @@
+/* Import google font family */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+
+/* Whole body */
+body {
+  background-color: #0f2b3d;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+/* Container */
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-template-rows: 86% 14%;
+  grid-template-areas:
+    "cont cont cont cont cont cont cont cont"
+    "fot fot fot fot fot fot fot fot";
+  /* height: 100vh;
+  width: 100%; */
+  margin: 4rem 0rem;
+  grid-gap: 20px;
+}
+
+.content {
+  grid-area: cont;
+}
+
+/* Footer */
+.footer {
+  grid-area: fot;
+  background-color: #454f58;
+  padding: 10px;
+}
+
+.copyright {
+  float: left;
+  padding: 10px;
+  color: #fff;
+}
+
+/* Social links */
+.social {
+  float: right;
+}
+
+.social img {
+  width: 70px;
+  height: 70px;
+}
+
+.social img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 50px #33b5e5 inset;
+  border-radius: 40px;
+}
+
+/* Navbar */
+.ul-nav {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #33b5e5;
+  position: fixed;
+  z-index: 1;
+}
+
+.ul-nav li {
+  float: left;
+}
+
+.ul-nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-right: 1px solid #1d8bcf;
+}
+
+.ul-nav li a:hover {
+  background-color: #205d85;
+  border-radius: 15px;
+}
+
+.li-home {
+  background-color: #657482;
+}
+
+/* Header */
+.heading {
+  color: #b2cee0;
+  text-align: center;
+}
