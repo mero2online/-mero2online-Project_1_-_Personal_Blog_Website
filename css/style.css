@@ -26,6 +26,7 @@ body {
   grid-area: cont;
 }
 
+/* Footer */
 .footer {
   grid-area: fot;
   background-color: #454f58;
@@ -38,6 +39,7 @@ body {
   color: #fff;
 }
 
+/* Social links */
 .social {
   float: right;
 }
