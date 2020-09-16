@@ -12,7 +12,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(8, auto);
-  grid-template-rows: 86% 14%;
+  grid-template-rows: 80% 20%;
   grid-template-areas:
     "cont cont cont cont cont cont cont cont"
     "fot fot fot fot fot fot fot fot";
@@ -29,21 +29,22 @@ body {
 /* Footer */
 .footer {
   grid-area: fot;
+}
+
+.footer footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: #454f58;
   padding: 10px;
 }
 
 .copyright {
-  float: left;
-  padding: 10px;
+  padding: 20px;
   color: #fff;
 }
 
 /* Social links */
-.social {
-  float: right;
-}
-
 .social img {
   width: 70px;
   height: 70px;
