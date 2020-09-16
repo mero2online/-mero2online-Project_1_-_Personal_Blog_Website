@@ -49,6 +49,12 @@ body {
   height: 70px;
 }
 
+.social img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 50px #33b5e5 inset;
+  border-radius: 40px;
+}
+
 /* Navbar */
 .ul-nav {
   display: flex;
