@@ -63,3 +63,9 @@ body {
 .li-home {
   background-color: #15c26b;
 }
+
+/* Header */
+.heading {
+  color: #b2cee0;
+  text-align: center;
+}
