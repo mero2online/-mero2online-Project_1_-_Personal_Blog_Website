@@ -74,16 +74,26 @@ body {
   text-align: center;
 }
 
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
 .card {
   width: 30%;
-  background-color: teal;
-  border: 1px solid yellow;
+  background-color: #b2cee0;
   margin-bottom: 20px;
   padding: 15px;
 }
 
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px #33b5e5;
+}
+
 .card-img {
-  width: 300px;
+  width: 100%;
   height: 200px;
 }
 
@@ -93,10 +103,20 @@ body {
 
 .btn {
   display: inline-block;
-  background-color: steelblue;
+  background-color: #2a77aa;
+  color: #e5eff5;
   border: hidden;
   position: relative;
   padding: 10px 20px;
   font-size: 17px;
   cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px 0 #33b5e5 inset;
+}
+
+a .btn {
+  float: right;
 }
