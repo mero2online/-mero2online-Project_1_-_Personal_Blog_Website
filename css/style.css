@@ -1,11 +1,11 @@
 /* Import google font family */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
 
 /* Whole body */
 body {
   background-color: #0f2b3d;
   margin: 0;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
 /* Container */
@@ -72,4 +72,31 @@ body {
 .heading {
   color: #b2cee0;
   text-align: center;
+}
+
+.card {
+  width: 30%;
+  background-color: teal;
+  border: 1px solid yellow;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.card-img {
+  width: 300px;
+  height: 200px;
+}
+
+.crad-content p {
+  padding: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: steelblue;
+  border: hidden;
+  position: relative;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
 }
