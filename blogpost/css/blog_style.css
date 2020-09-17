@@ -10,21 +10,21 @@ body {
 
 /* Header */
 .heading {
+  grid-area: hd;
   color: #b2cee0;
   text-align: center;
-  margin-top: 70px;
 }
 
 /* Container */
 .container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 80% 20%;
+  grid-template-rows: 70px 80px 1fr 100px;
   grid-template-areas:
+    "gnb gnb gnb gnb gnb gnb gnb gnb"
+    "hd hd hd hd hd hd hd hd"
     "cont cont cont cont cont cont rs rs"
     "fot fot fot fot fot fot fot fot";
-  /* height: 100vh;
-  width: 100%; */
   grid-gap: 10px;
 }
 
@@ -74,6 +74,10 @@ body {
 }
 
 /* Navbar */
+.global-nav {
+  grid-area: gnb;
+}
+
 .ul-nav {
   display: flex;
   justify-content: center;
