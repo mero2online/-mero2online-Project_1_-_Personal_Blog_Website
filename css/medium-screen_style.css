@@ -1,0 +1,155 @@
+/* Import google font family */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+
+/* Whole body */
+body {
+  background-color: #dd7412;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+
+/* Main container */
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 70px 80px 1fr 100px;
+  grid-template-areas:
+    "gnb"
+    "hd"
+    "cont"
+    "fot";
+  grid-gap: 10px;
+}
+
+/* Gloabal navbar */
+.global-nav {
+  grid-area: gnb;
+}
+
+.ul-nav {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  overflow: hidden;
+  background-image: radial-gradient(#33b5e5, #1d8bcf, #33b5e5);
+  /* position: fixed; */
+  z-index: 1;
+}
+
+.ul-nav li {
+  float: left;
+}
+
+.ul-nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-right: 1px solid #1d8bcf;
+}
+
+.ul-nav li a:hover {
+  background-color: #205d85;
+  border-radius: 15px;
+}
+
+.li-home {
+  background-color: #657482;
+}
+
+/* Main header */
+.heading {
+  grid-area: hd;
+  color: #b2cee0;
+  text-align: center;
+}
+
+/* Main Content */
+.content {
+  grid-area: cont;
+}
+
+/* Main content / Cards */
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 30%;
+  background-color: #b2cee0;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px #33b5e5;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+}
+
+.crad-content p {
+  padding: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #2a77aa;
+  color: #e5eff5;
+  border: hidden;
+  position: relative;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #33b5e5 inset;
+}
+
+a .btn {
+  float: right;
+}
+
+.ul-nav i {
+  color: #fff5e2;
+  margin-right: 5px;
+}
+
+/* Footer */
+.footer {
+  grid-area: fot;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #454f58;
+  padding: 10px;
+}
+
+.copyright {
+  padding: 10px;
+  color: #fff;
+}
+
+/* Footer / Social links */
+.social img {
+  width: 70px;
+  height: 70px;
+}
+
+.social img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 50px #33b5e5 inset;
+  border-radius: 40px;
+}
