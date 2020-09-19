@@ -91,6 +91,37 @@ body {
   font-size: 130%;
 }
 
+/* Blog article */
+.blog-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-article p {
+  color: #fff;
+  font-size: 130%;
+  padding: 15px;
+}
+
+.blog-article span {
+  text-decoration: underline;
+}
+
+.blog-article figure {
+  background-color: #1d5174;
+  border: 1px solid #c8ccd1;
+  padding: 10px;
+}
+
+.blog-article img {
+  width: 100%;
+  height: 500px;
+}
+
+.blog-article figcaption {
+  color: #e5eff5;
+}
+
 /* Aside */
 .right-side {
   grid-area: rs;
