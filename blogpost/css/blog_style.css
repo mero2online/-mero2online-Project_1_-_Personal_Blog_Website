@@ -114,3 +114,8 @@ body {
 .li-home {
   background-color: #657482;
 }
+
+.ul-nav i {
+  color: #fff5e2;
+  margin-right: 5px;
+}

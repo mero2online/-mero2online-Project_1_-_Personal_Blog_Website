@@ -150,3 +150,8 @@ body {
 a .btn {
   float: right;
 }
+
+.ul-nav i {
+  color: #fff5e2;
+  margin-right: 5px;
+}
