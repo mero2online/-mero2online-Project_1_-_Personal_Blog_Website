@@ -31,6 +31,18 @@ body {
 .content {
   grid-area: cont;
 }
+.content-heading {
+  display: flex;
+  justify-content:space-between;
+  padding: 20px;
+  color: #e5eff5;
+  background-image: linear-gradient(to left, #6ea3c5, #1d5174);
+}
+
+.blog-date {
+  display:flex;    
+  align-items:flex-end;
+}
 
 .author-info {
   background-color: #a4e4f5;
