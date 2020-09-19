@@ -150,6 +150,31 @@ body {
   color: #b2cee0;
 }
 
+/* blog-gallery */
+.blog-gallery {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 50% 50%;
+  justify-content: center;
+}
+
+.blog-gallery > * {
+  border: 3px solid #c8ccd1;
+}
+
+.blog-gallery div {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: #657482;
+}
+
+.blog-gallery img {
+  width: 100%;
+  height: 100%;
+}
+
 /* Aside */
 .right-side {
   grid-area: rs;
