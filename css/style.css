@@ -44,8 +44,6 @@
     list-style-type: none;
     overflow: hidden;
     background-image: radial-gradient(#33b5e5, #1d8bcf, #33b5e5);
-    /* position: fixed; */
-    z-index: 1;
   }
 
   .ul-nav li {
@@ -62,7 +60,7 @@
     border-right: 1px solid #1d8bcf;
   }
 
-  .ul-nav li a:hover {
+  .ul-nav li:hover {
     background-color: #205d85;
     border-radius: 15px;
   }
