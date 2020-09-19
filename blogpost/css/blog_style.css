@@ -8,7 +8,20 @@ body {
   font-family: "Merriweather", serif;
 }
 
-/* Navbar */
+/* Main container */
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 70px 80px 1fr 100px;
+  grid-template-areas:
+    "gnb gnb gnb gnb gnb gnb gnb gnb"
+    "hd hd hd hd hd hd hd hd"
+    "cont cont cont cont cont cont rs rs"
+    "fot fot fot fot fot fot fot fot";
+  grid-gap: 10px;
+}
+
+/* Gloabal navbar */
 .global-nav {
   grid-area: gnb;
 }
@@ -22,7 +35,7 @@ body {
   width: 100%;
   list-style-type: none;
   overflow: hidden;
-  background-color: #33b5e5;
+  background-image: radial-gradient(#33b5e5, #1d8bcf, #33b5e5);
   /* position: fixed; */
   z-index: 1;
 }
@@ -60,19 +73,6 @@ body {
   grid-area: hd;
   color: #b2cee0;
   text-align: center;
-}
-
-/* Container */
-.container {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 70px 80px 1fr 100px;
-  grid-template-areas:
-    "gnb gnb gnb gnb gnb gnb gnb gnb"
-    "hd hd hd hd hd hd hd hd"
-    "cont cont cont cont cont cont rs rs"
-    "fot fot fot fot fot fot fot fot";
-  grid-gap: 10px;
 }
 
 /* Main Content */
@@ -205,7 +205,7 @@ body {
   background-image: linear-gradient(to left, #6ea3c5, #1d5174);
 }
 
-/* Blog gallery */
+/* Main content / Blog gallery */
 .blog-gallery {
   display: grid;
   grid-template-columns: 30% 30% 30%;
@@ -238,7 +238,13 @@ body {
 /* Aside */
 .right-side {
   grid-area: rs;
-  background-color: #014052;
+  background-image: linear-gradient(
+    to bottom,
+    #014052,
+    #0f2b3d,
+    #0f2b3d,
+    #0f2b3d
+  );
 }
 
 /* Aside / Blog content list */

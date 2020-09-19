@@ -8,14 +8,7 @@ body {
   font-family: "Merriweather", serif;
 }
 
-/* Header */
-.heading {
-  grid-area: hd;
-  color: #b2cee0;
-  text-align: center;
-}
-
-/* Container */
+/* Main container */
 .container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -28,39 +21,7 @@ body {
   grid-gap: 10px;
 }
 
-.content {
-  grid-area: cont;
-}
-
-/* Footer */
-
-.footer {
-  grid-area: fot;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #454f58;
-  padding: 10px;
-}
-
-.copyright {
-  padding: 10px;
-  color: #fff;
-}
-
-/* Social links */
-.social img {
-  width: 70px;
-  height: 70px;
-}
-
-.social img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 50px #33b5e5 inset;
-  border-radius: 40px;
-}
-
-/* Navbar */
+/* Gloabal navbar */
 .global-nav {
   grid-area: gnb;
 }
@@ -74,8 +35,8 @@ body {
   width: 100%;
   list-style-type: none;
   overflow: hidden;
-  background-color: #33b5e5;
-  position: fixed;
+  background-image: radial-gradient(#33b5e5, #1d8bcf, #33b5e5);
+  /* position: fixed; */
   z-index: 1;
 }
 
@@ -102,7 +63,19 @@ body {
   background-color: #657482;
 }
 
-/* Cards */
+/* Main header */
+.heading {
+  grid-area: hd;
+  color: #b2cee0;
+  text-align: center;
+}
+
+/* Main Content */
+.content {
+  grid-area: cont;
+}
+
+/* Main content / Cards */
 .cards {
   display: flex;
   justify-content: space-around;
@@ -152,4 +125,31 @@ a .btn {
 .ul-nav i {
   color: #fff5e2;
   margin-right: 5px;
+}
+
+/* Footer */
+.footer {
+  grid-area: fot;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #454f58;
+  padding: 10px;
+}
+
+.copyright {
+  padding: 10px;
+  color: #fff;
+}
+
+/* Footer / Social links */
+.social img {
+  width: 70px;
+  height: 70px;
+}
+
+.social img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 50px #33b5e5 inset;
+  border-radius: 40px;
 }
