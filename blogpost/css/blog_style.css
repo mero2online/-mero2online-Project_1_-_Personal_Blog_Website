@@ -122,6 +122,34 @@ body {
   color: #e5eff5;
 }
 
+/* Listed-items Article */
+.listed-items {
+  color: #fff;
+  font-size: 130%;
+  padding: 15px;
+}
+
+.listed-items h3 {
+  color: #b2cee0;
+}
+
+.listed-items ol li {
+  font-weight: bold;
+  color: #53cbed;
+  padding: 5px;
+}
+
+.listed-items ol li ol li {
+  font-weight: normal;
+  color: #b2cee0;
+}
+
+.listed-items ol li ul li {
+  font-weight: normal;
+  list-style-type: square;
+  color: #b2cee0;
+}
+
 /* Aside */
 .right-side {
   grid-area: rs;
