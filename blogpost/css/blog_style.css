@@ -31,22 +31,63 @@ body {
 .content {
   grid-area: cont;
 }
+
 .content-heading {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   padding: 20px;
   color: #e5eff5;
-  background-image: linear-gradient(to left, #6ea3c5, #1d5174);
+  background-image: linear-gradient(to right, #6ea3c5, #1d5174);
 }
 
 .blog-date {
-  display:flex;    
-  align-items:flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 
+/* Content / Author-info */
 .author-info {
-  background-color: #a4e4f5;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to left, #6ea3c5, #1d5174);
   padding: 10px;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.placeholder figcaption {
+  font-weight: bold;
+  text-align: center;
+}
+
+.placeholder a {
+  text-decoration: none;
+  color: #02b3e4;
+}
+
+.placeholder a:hover {
+  text-decoration: underline;
+}
+
+.placeholder-title {
+  color: #0f2b3d;
+  font-style: italic;
+}
+
+.placeholder img {
+  height: 100px;
+  width: 90px;
+  border-radius: 20%;
+  border: 1px solid black;
+}
+
+.author-desc {
+  font-size: 130%;
 }
 
 /* Aside */
