@@ -28,6 +28,7 @@ body {
   grid-gap: 10px;
 }
 
+/* Content */
 .content {
   grid-area: cont;
 }
@@ -99,9 +100,6 @@ body {
 /* Footer */
 .footer {
   grid-area: fot;
-}
-
-.footer footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
