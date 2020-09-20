@@ -99,6 +99,7 @@
     background-color: #b2cee0;
     margin-bottom: 20px;
     padding: 15px;
+    box-sizing: border-box;
   }
 
   .card:hover {

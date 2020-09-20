@@ -1,6 +1,6 @@
 /* Whole body */
 body {
-  background-color: rgb(63, 48, 150);
+  background-color: #3f3096;
   margin: 0;
   font-family: "Merriweather", serif;
 }
@@ -83,7 +83,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   font-size: 60%;
 }
 
@@ -92,6 +92,7 @@ body {
   background-color: #b2cee0;
   margin-bottom: 20px;
   padding: 15px;
+  box-sizing: border-box;
 }
 
 .card:hover {
