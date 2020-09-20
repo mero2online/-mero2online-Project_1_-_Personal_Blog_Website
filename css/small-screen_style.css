@@ -1,6 +1,6 @@
 /* Whole body */
 body {
-  background-color: #0f2b3d;
+  background-color: rgb(63, 48, 150);
   margin: 0;
   font-family: "Merriweather", serif;
 }
@@ -8,13 +8,13 @@ body {
 /* Main container */
 .container {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 1fr 1fr 7fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
   grid-template-areas:
-    "gnb gnb gnb gnb gnb gnb gnb gnb"
-    "hd hd hd hd hd hd hd hd"
-    "cont cont cont cont cont cont cont cont"
-    "fot fot fot fot fot fot fot fot";
+    "gnb"
+    "hd"
+    "cont"
+    "fot";
   grid-gap: 10px;
 }
 
@@ -50,9 +50,10 @@ body {
 .ul-nav li a {
   color: black;
   text-align: center;
-  padding: 20px;
+  padding: 5px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 8px;
   border-right: 1px solid #1d8bcf;
 }
 
@@ -69,6 +70,7 @@ body {
   grid-area: hd;
   color: #b2cee0;
   text-align: center;
+  font-size: 48%;
 }
 
 /* Main Content */
@@ -80,10 +82,13 @@ body {
 .cards {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
+  align-items:center;
+  font-size: 60%;
 }
 
 .card {
-  width: 30%;
+  width: 65%;
   background-color: #b2cee0;
   margin-bottom: 20px;
   padding: 15px;
@@ -96,7 +101,7 @@ body {
 
 .card-img {
   width: 100%;
-  height: 200px;
+  height: 100px;
 }
 
 .crad-content p {
@@ -110,8 +115,8 @@ body {
   border: hidden;
   position: relative;
   padding: 10px 20px;
-  font-size: 17px;
   cursor: pointer;
+  font-size: 100%;
 }
 
 .btn:hover {
@@ -127,7 +132,7 @@ a .btn {
 .footer {
   grid-area: fot;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   background-color: #454f58;
   padding: 10px;
@@ -140,8 +145,9 @@ a .btn {
 
 /* Footer / Social links */
 .social img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
+  float: right;
 }
 
 .social img:hover {
