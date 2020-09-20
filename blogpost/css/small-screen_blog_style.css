@@ -3,18 +3,20 @@ body {
   background-color: #0f2b3d;
   margin: 0;
   font-family: "Merriweather", serif;
+  font-size: 50%;
 }
 
 /* Main container */
 .container {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto 1fr auto;
   grid-template-areas:
-    "gnb gnb gnb gnb gnb gnb gnb gnb"
-    "hd hd hd hd hd hd hd hd"
-    "cont cont cont cont cont cont rs rs"
-    "fot fot fot fot fot fot fot fot";
+    "gnb"
+    "hd"
+    "rs"
+    "cont"
+    "fot";
   grid-gap: 10px;
 }
 
@@ -50,9 +52,10 @@ body {
 .ul-nav li a {
   color: black;
   text-align: center;
-  padding: 20px;
+  padding: 5px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 8px;
   border-right: 1px solid #1d8bcf;
 }
 
@@ -78,7 +81,7 @@ body {
 
 .content-heading {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 20px;
   color: #e5eff5;
   background-image: linear-gradient(to right, #6ea3c5, #1d5174);
@@ -86,13 +89,14 @@ body {
 
 .blog-date {
   display: flex;
-  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 /* Main content / Author-info */
 .author-info {
   display: flex;
   align-items: center;
+  flex-direction: column;
   background-image: linear-gradient(to left, #6ea3c5, #1d5174);
   padding: 10px;
 }
@@ -101,7 +105,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
 }
 
 .placeholder figcaption {
@@ -153,12 +156,12 @@ body {
 .blog-article figure {
   background-color: #1d5174;
   border: 1px solid #c8ccd1;
-  padding: 10px;
+  padding: 5px;
 }
 
 .blog-article img {
   width: 100%;
-  height: 500px;
+  height: 100%;
 }
 
 .blog-article figcaption {
@@ -204,8 +207,8 @@ body {
 /* Blog gallery */
 .blog-gallery {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 30% 30%;
   justify-content: center;
 }
 
@@ -217,7 +220,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 10px;
-  padding: 10px;
+  padding: 3px;
   background-color: #657482;
 }
 
@@ -257,6 +260,10 @@ body {
 }
 
 /* Aside / Blog archives */
+.blog-archives li {
+  display: inline-block;
+}
+
 .blog-archives a {
   text-decoration: none;
   color: #02b3e4;
@@ -270,21 +277,22 @@ body {
 .footer {
   grid-area: fot;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   background-color: #454f58;
   padding: 10px;
 }
 
 .copyright {
-  padding: 20px;
+  padding: 10px;
   color: #fff;
 }
 
 /* Footer / Social links */
 .social img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
+  float: right;
 }
 
 .social img:hover {
