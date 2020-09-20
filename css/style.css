@@ -21,7 +21,7 @@
   .container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 70px 80px 1fr 100px;
+    grid-template-rows: 1fr 1fr 7fr 1fr;
     grid-template-areas:
       "gnb gnb gnb gnb gnb gnb gnb gnb"
       "hd hd hd hd hd hd hd hd"
@@ -32,33 +32,26 @@
 
   /* Gloabal navbar */
   .global-nav {
+    display: flex;
+    align-items: center;
     grid-area: gnb;
+    background-image: radial-gradient(#33b5e5, #1d8bcf, #33b5e5);
   }
 
   .ul-nav {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    top: 0;
-    width: 100%;
-    list-style-type: none;
-    overflow: hidden;
-    background-image: radial-gradient(#33b5e5, #1d8bcf, #33b5e5);
   }
 
   .ul-nav li {
-    float: left;
-  }
-
-  .ul-nav li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 20px 30px;
-    text-decoration: none;
-    font-weight: bold;
-    border-right: 1px solid #1d8bcf;
+    display: flex;
+    justify-content: space-around;
   }
 
   .ul-nav li:hover {
@@ -66,8 +59,21 @@
     border-radius: 15px;
   }
 
-  .li-home {
-    background-color: #657482;
+  .ul-nav li a {
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-right: 1px solid #1d8bcf;
+  }
+
+  .ul-nav i {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff5e2;
+    margin-bottom: 8px;
   }
 
   /* Main header */
@@ -127,11 +133,6 @@
 
   a .btn {
     float: right;
-  }
-
-  .ul-nav i {
-    color: #fff5e2;
-    margin-right: 5px;
   }
 
   /* Footer */

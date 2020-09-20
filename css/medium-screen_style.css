@@ -1,9 +1,6 @@
-/* Import google font family */
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
-
 /* Whole body */
 body {
-  background-color: #dd7412;
+  background-color: orange;
   margin: 0;
   font-family: "Merriweather", serif;
 }
@@ -12,55 +9,59 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 70px 80px 1fr 100px;
+  grid-template-rows: 1fr 1fr 7fr 1fr;
   grid-template-areas:
-    "gnb"
-    "hd"
-    "cont"
-    "fot";
+    "gnb gnb gnb gnb gnb gnb gnb gnb"
+    "hd hd hd hd hd hd hd hd"
+    "cont cont cont cont cont cont cont cont"
+    "fot fot fot fot fot fot fot fot";
   grid-gap: 10px;
 }
 
 /* Gloabal navbar */
 .global-nav {
+  display: flex;
+  align-items: center;
   grid-area: gnb;
+  background-image: radial-gradient(#33b5e5, #1d8bcf, #33b5e5);
 }
 
 .ul-nav {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  top: 0;
-  width: 100%;
-  list-style-type: none;
-  overflow: hidden;
-  background-image: radial-gradient(#33b5e5, #1d8bcf, #33b5e5);
-  /* position: fixed; */
-  z-index: 1;
 }
 
 .ul-nav li {
-  float: left;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ul-nav li:hover {
+  background-color: #205d85;
+  border-radius: 15px;
 }
 
 .ul-nav li a {
-  display: block;
   color: black;
   text-align: center;
-  padding: 20px 30px;
+  padding: 20px;
   text-decoration: none;
   font-weight: bold;
   border-right: 1px solid #1d8bcf;
 }
 
-.ul-nav li a:hover {
-  background-color: #205d85;
-  border-radius: 15px;
-}
-
-.li-home {
-  background-color: #657482;
+.ul-nav i {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: #fff5e2;
+  margin-bottom: 8px;
 }
 
 /* Main header */
@@ -120,11 +121,6 @@ body {
 
 a .btn {
   float: right;
-}
-
-.ul-nav i {
-  color: #fff5e2;
-  margin-right: 5px;
 }
 
 /* Footer */
