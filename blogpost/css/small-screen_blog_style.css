@@ -3,7 +3,6 @@ body {
   background-color: #0f2b3d;
   margin: 0;
   font-family: "Merriweather", serif;
-  font-size: 50%;
 }
 
 /* Main container */
@@ -72,6 +71,7 @@ body {
   grid-area: hd;
   color: #b2cee0;
   text-align: center;
+  font-size: 80%;
 }
 
 /* Main Content */
@@ -133,10 +133,6 @@ body {
   border: 1px solid black;
 }
 
-.author-desc {
-  font-size: 130%;
-}
-
 /* Main content / Blog article */
 .blog-article {
   display: flex;
@@ -145,7 +141,6 @@ body {
 
 .blog-article p {
   color: #fff;
-  font-size: 130%;
   padding: 15px;
 }
 
@@ -171,7 +166,6 @@ body {
 /* Main content / Listed items article */
 .listed-items {
   color: #fff;
-  font-size: 130%;
   padding: 15px;
   border-top: 3px solid #c8ccd1;
 }

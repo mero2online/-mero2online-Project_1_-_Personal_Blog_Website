@@ -246,7 +246,7 @@
   /* Aside */
   .right-side {
     grid-area: rs;
-    background-color: #014052;
+    background-image: linear-gradient(to bottom, #014052,  #0f2b3d,  #0f2b3d, #0f2b3d);
   }
 
   /* Aside / Blog content list */
@@ -269,6 +269,10 @@
   }
 
   /* Aside / Blog archives */
+  .blog-archives li {
+    color: #02b3e4;
+  }
+
   .blog-archives a {
     text-decoration: none;
     color: #02b3e4;
