@@ -227,6 +227,32 @@ body {
   transform: scale(1.03);
 }
 
+/* Buttons for older and newer post */
+.older-newer-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: 3px solid #c8ccd1;
+  margin: 10px;
+  padding: 10px;
+}
+
+.older-newer-post button {
+  background-color: #0f2b3d;
+  color: #1d8bcf;
+  font-weight: bold;
+  padding: 5px 2px;
+  margin: 8px;
+  border: 3px solid #1d8bcf;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.older-newer-post button:hover {
+  background-color: #014052;
+  border-radius: 10px;
+}
+
 /* Aside */
 .right-side {
   grid-area: rs;
