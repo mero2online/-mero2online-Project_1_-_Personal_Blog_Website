@@ -151,6 +151,22 @@
     color: #fff;
   }
 
+  .subscribe {
+    background-color: #fff;
+    color: #1d8bcf;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin: 8px;
+    border: 3px solid #1d8bcf;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .subscribe:hover {
+    background-color: #0f2b3d;
+    border-radius: 10px;
+  }
+
   /* Footer / Social links */
   .social img {
     width: 70px;

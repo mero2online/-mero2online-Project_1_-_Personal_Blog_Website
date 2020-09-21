@@ -246,7 +246,13 @@
   /* Aside */
   .right-side {
     grid-area: rs;
-    background-image: linear-gradient(to bottom, #014052,  #0f2b3d,  #0f2b3d, #0f2b3d);
+    background-image: linear-gradient(
+      to bottom,
+      #014052,
+      #0f2b3d,
+      #0f2b3d,
+      #0f2b3d
+    );
   }
 
   /* Aside / Blog content list */
@@ -295,6 +301,22 @@
   .copyright {
     padding: 20px;
     color: #fff;
+  }
+
+  .subscribe {
+    background-color: #fff;
+    color: #1d8bcf;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin: 8px;
+    border: 3px solid #1d8bcf;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .subscribe:hover {
+    background-color: #0f2b3d;
+    border-radius: 10px;
   }
 
   /* Footer / Social links */
