@@ -1,48 +1,22 @@
-# Landing Page Project
+# Personal Blog Website Project
 
 ## Main Object
 
-The object from this project is to **convert** this page from a _static_ page to an _interactive_ one.
-
+In this project, I have started from _scratch!_ To complete the project, I have build the **HTML** and **CSS** files to include as part of my work.
 
 ## Objects
 
-***Change page behavior***
+***Build two page completely***
 
-1- Navigation is built dynamically as an unordered list by JS.
+1- Home page
+- [Home](https://mero2online.github.io/-mero2online-Project_1_-_Personal_Blog_Website/index.html)
 
-2- Section and navigation menu (Active State)
-* It should be clear which section is being viewed while scrolling through the page.
-
-3- Scroll to Anchor
-* When clicking an item from the navigation menu, the link should scroll to the appropriate section.
+2- Blog page
+- [Blog](https://mero2online.github.io/-mero2online-Project_1_-_Personal_Blog_Website/blogpost/blog.html)
 
 ## Project page
 
-To see the project page [Click here](https://mero2online.github.io/Project_2_-_Landing_Page/)
-
-### Issues
-
-1- Hover on the element on the touch screen hover be sticky on tap
-
-- To avoid this issue add this media quairy for devices that can hover (desktops, laptops, non touch screen).
-
-```
-@media (hover: hover) {
-    .class:hover {
-    }
-}
-```
-2- When hover over button the tooltip visible correctly on desktop but on the touch screen not visible correctly
-
-- To avoid this issue hide the tooltip on the touch screen and add this media quairy 
-```
-@media (pointer: coarse) {
-  .class:hover: {
-    display: none;
-  }
-}
-```
+To see the project page [Click here](https://mero2online.github.io/-mero2online-Project_1_-_Personal_Blog_Website/)
 
 ---
 ### License
