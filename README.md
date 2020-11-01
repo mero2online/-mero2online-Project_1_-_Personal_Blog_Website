@@ -21,7 +21,7 @@ To see the project page [Click here](https://mero2online.github.io/-mero2online-
 ---
 ### License
 
-Landing Page Project is Copyright © 2020 Udaciy.
+Personal Blog Website Project is Copyright © 2020 Udaciy.
 It is open source project, and redistributed under the terms specified in the
 [LICENSE] file.
 
